@@ -7,8 +7,10 @@
  *              line. Works with artistic text and text frames, including the
  *              lines a frame wraps on its own. One Ctrl+Z undoes everything.
  * version: 1.0.2
- * author: vcrespo
- * https://github.com/vicc3d/affinity-join-split-text
+ * author: Victor Crespo (3dvic.com · github.com/vicc3d)
+ * license: MIT
+ *
+ * Victor Crespo -- 3dvic.com -- github.com/vicc3d/affinity-join-split-text
  */
 
 const { app } = require('/application.js');

@@ -7,8 +7,10 @@
  *              con texto artístico y marcos de texto, incluidas las líneas que
  *              un marco corta por sí solo. Un solo Ctrl+Z lo deshace todo.
  * version: 1.0.2
- * author: vcrespo
- * https://github.com/vicc3d/affinity-join-split-text
+ * author: Victor Crespo (3dvic.com · github.com/vicc3d)
+ * license: MIT
+ *
+ * Victor Crespo -- 3dvic.com -- github.com/vicc3d/affinity-join-split-text
  */
 
 const { app } = require('/application.js');
