@@ -6,7 +6,7 @@
  *              paragraph. Keeps character formatting and the position of every
  *              line. Works with artistic text and text frames, including the
  *              lines a frame wraps on its own. One Ctrl+Z undoes everything.
- * version: 1.0.2
+ * version: 1.0.3
  * author: Victor Crespo (3dvic.com · github.com/vicc3d)
  * license: MIT
  *
@@ -682,7 +682,8 @@ function runModalSafe(dlg) {
 
 function showDialog(count) {
     const dlg = Dialog.create(T.title);
-    dlg.initialWidth = 420;
+    // No initialWidth: with 420 the dialog froze under Wine (Linux), re-laying itself out
+    // endlessly. Affinity sizes it to its content instead.
     const col = dlg.addColumn();
 
     const gMode = col.addGroup('');

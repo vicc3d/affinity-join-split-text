@@ -6,7 +6,7 @@
  *              formato de los caracteres y la posición de cada línea. Funciona
  *              con texto artístico y marcos de texto, incluidas las líneas que
  *              un marco corta por sí solo. Un solo Ctrl+Z lo deshace todo.
- * version: 1.0.2
+ * version: 1.0.3
  * author: Victor Crespo (3dvic.com · github.com/vicc3d)
  * license: MIT
  *
@@ -682,7 +682,8 @@ function runModalSafe(dlg) {
 
 function showDialog(count) {
     const dlg = Dialog.create(T.title);
-    dlg.initialWidth = 420;
+    // No initialWidth: with 420 the dialog froze under Wine (Linux), re-laying itself out
+    // endlessly. Affinity sizes it to its content instead.
     const col = dlg.addColumn();
 
     const gMode = col.addGroup('');
